@@ -1,12 +1,27 @@
 
-/* 
+body{
+    background-color: rgba(252, 246, 172, 0.781);
 
-    You can write your own styles here...
+}
+.container{
+    background-color: rgba(252, 246, 172, 0.781);
+    font-family: 'Roboto', sans-serif;
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
+.title{
+    background-color: rgba(252, 246, 172, 0.781);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 
-*/
+}
+
+.col-12{
+    background-color: rgba(252, 246, 172, 0.781);
+    font-family: 'Roboto', sans-serif;
+   
+}
+.close{
+    align-items: center;
+    justify-content: end;
+    text-align: justify;
+}
