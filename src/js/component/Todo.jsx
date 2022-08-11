@@ -58,18 +58,16 @@ const Todo = () => {
 
 			<div className="col-12 row justify-content-center">
 				<h3 className="text-center" >FINISH TO BEING AN EXCELLENT DEVELOPER!</h3>
-		
 				<div className="col-8 md d-flex flex-column align-items-center  ">
 					<form onSubmit={(event)=>{event.preventDefault()}}>
 						<input
-							className="border-radious-5"
+							className="input"
 							onKeyDown={handleKey}
 							placeholder="Add your Task "
 							onChange={handleChange}
 							name="task"
 							value={task.task}
 						/>
-
 					</form>
 
 					<button
@@ -80,7 +78,6 @@ const Todo = () => {
 						Save
 
 					</button>
-
 				</div>
 
 				<div className="card col-8 md shadow-lg">
@@ -89,34 +86,22 @@ const Todo = () => {
 						listTask.map((tak, i) => {
 							return (
 								<li key={i} className="listT d-flex justify-content-between border-bottom">
-
 									
 									{tak.task}
-										
-															
+																						
 									<i 
 										onClick={()=>{deleteTask(i)}}
 										className="close far fa-times-circle mx-5 p-2"
 										type="button"
 									>
-									</i>
-											
-									
-
+									</i>																				
 								</li>
-
 							)
-
 						})
 					}</ul>
-
-
 				</div>
-
-
 			</div>
 		</div>
-
 	)
 };
 
